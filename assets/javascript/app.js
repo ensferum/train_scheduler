@@ -15,7 +15,7 @@
 var database = firebase.database();
 
 //Directory
-var trainRef = database.ref("/Train Scheduler");
+var trainRef = database.ref("/train-scheduler");
 
 // Create Variables
 var name = null;
@@ -39,7 +39,7 @@ $("#user-add-train").on("click", function() {
   }
 
   // Save to Firebase
-  database.ref("/Train Scheduler").push(newTrn);
+  database.ref("/train-scheduler").push(newTrn);
 
   // Make Input Boxes Blank After Firebase Push
   $("#user-input-name").val(null);
@@ -50,7 +50,7 @@ $("#user-add-train").on("click", function() {
 });
 
 // Add train to Firebase
-database.ref("/Train Scheduler").on("child_added", function( x, y) {
+database.ref("/train-scheduler").on("child_added", function( x, y) {
 
 
   var nameOfTrain = x.val().name;
