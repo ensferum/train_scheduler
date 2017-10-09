@@ -1,0 +1,16 @@
+body {
+	background-image: url("../images/sharktrain.jpg");
+	background-size: cover;
+}
+
+.jumbotron {
+	margin-top: 30px;
+	margin-left:  60px;
+	margin-right: 60px;
+	background-color:  teal;
+	color:  black;
+	text-align:  center;
+	border-radius: 10px;
+	font-weight:bolder;
+}
+
